@@ -1,7 +1,5 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-for i in numbers:
-    for i_2 in numbers:
+for i in range(1, 10):
+    for i_2 in range(1, 10):
         result = i * i_2
         print(result, end=" ")
         if i_2 % 9 == 0:
