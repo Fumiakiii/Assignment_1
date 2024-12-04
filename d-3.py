@@ -7,11 +7,11 @@ class Square:
         self.side = side
 
     def area(self):
-        result = f"{self.side**2:.2f}".rstrip("0").rstrip(".")
+        result = round(self.side**2, 2)
         return result
 
     def diagonal(self):
-        result = f"{math.sqrt(2)*self.side:.2f}".rstrip("0").rstrip(".")
+        result = round(math.sqrt(2) * self.side, 2)
         return result
 
 
